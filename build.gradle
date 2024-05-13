@@ -1,0 +1,80 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.4.3'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'io.appium:java-client:9.0.0'
+//    implementation 'org.seleniumhq.selenium:selenium-java:4.14.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.3.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter:2.3.0.RELEASE'
+    implementation 'com.lmax:disruptor:3.4.0'
+    implementation 'org.springframework.boot:spring-boot-starter-jetty:2.3.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.3.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.3.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.3.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-validation:2.3.0.RELEASE'
+    implementation 'org.apache.commons:commons-lang3:3.11'
+    implementation 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    implementation 'com.android.tools.ddms:ddmlib:25.3.0'
+    implementation 'com.android.tools:sdklib:25.3.0'
+    implementation 'com.googlecode.plist:dd-plist:1.23'
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.2'
+    implementation 'net.java.dev.jna:jna:5.5.0'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.12'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.glassfish.jersey.containers:jersey-container-jetty-http:2.31'
+    implementation 'org.glassfish.jersey.core:jersey-server:2.31'
+    implementation 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.31'
+    implementation 'org.glassfish.jersey.inject:jersey-hk2:2.31'
+    implementation 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.11.2'
+    implementation 'com.sun.jersey.contribs:jersey-spring:1.19.4'
+    implementation 'com.newrelic.agent.java:newrelic-api:8.0.0'
+    implementation 'com.newrelic.agent.java:newrelic-agent:8.0.0'
+    implementation 'com.newrelic.telemetry:micrometer-registry-new-relic:0.8.0'
+    implementation 'com.newrelic.logging:log4j2:2.0'
+    implementation 'com.kohlschutter.junixsocket:junixsocket-common:2.4.0'
+    implementation 'com.kohlschutter.junixsocket:junixsocket-native-common:2.4.0'
+    implementation 'net.java.dev.jna:jna-platform:5.8.0'
+    implementation 'net.lingala.zip4j:zip4j:2.6.4'
+    implementation 'org.json:json:20160810'
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.0'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    implementation 'org.mapstruct:mapstruct:1.4.2.Final'
+    compileOnly 'org.mapstruct:mapstruct:1.4.2.Final'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'com.amazonaws:aws-java-sdk-core:1.12.218'
+    implementation 'org.seleniumhq.selenium:selenium-remote-driver:4.14.1'
+    implementation 'io.appium:java-client:9.0.0'
+    implementation 'org.springframework.data:spring-data-jpa:2.5.2'
+    implementation 'org.apache.commons:commons-compress:1.21'
+    implementation 'org.jsoup:jsoup:1.15.3'
+    implementation 'org.apache.poi:poi-ooxml:5.0.0'
+    implementation 'org.seleniumhq.selenium:selenium-api:4.14.1'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.14.1'
+    implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.14.1'
+    implementation 'org.seleniumhq.selenium:selenium-chromium-driver:4.14.1'
+    implementation 'org.seleniumhq.selenium:selenium-safari-driver:4.14.1'
+    implementation 'org.seleniumhq.selenium:selenium-edge-driver:4.14.1'
+    implementation 'org.testng:testng:7.4.0'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
