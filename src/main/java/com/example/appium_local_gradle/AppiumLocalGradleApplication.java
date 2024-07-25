@@ -28,8 +28,10 @@ public class AppiumLocalGradleApplication {
 //        selenium();
 //        sample.main(args);
 //        pdf.main(args);
-        appiumMobileWebIOS.main(args);
+//        appiumMobileWebIOS.main(args);
+        LamdatestAppium.execute();
     }
+
 
     public static void goUpToCheckInButtonAndClick() throws MalformedURLException {
         AppiumDriver driver = null;
@@ -136,7 +138,7 @@ public class AppiumLocalGradleApplication {
         // Get current date and time
         LocalDateTime currentTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        return currentTime.format(formatter);
+        return currentTime.format(formatter) + "  ::  ";
     }
 
     private static DesiredCapabilities getDesiredCapabilities() {
