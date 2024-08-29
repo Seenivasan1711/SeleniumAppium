@@ -11,7 +11,6 @@ import org.openqa.selenium.safari.SafariOptions;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.*;
-import org.openqa.selenium.safari.SafariOptions;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -29,7 +28,8 @@ public class AppiumLocalGradleApplication {
 //        sample.main(args);
 //        pdf.main(args);
 //        appiumMobileWebIOS.main(args);
-        LamdatestAppium.execute();
+//        LamdatestAppium.execute();
+        LambdaTestMobileWeb.execute();
     }
 
 
