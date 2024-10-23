@@ -28,8 +28,8 @@ public class AppiumLocalGradleApplication {
 //        sample.main(args);
 //        pdf.main(args);
 //        appiumMobileWebIOS.main(args);
-//        LamdatestAppium.execute();
-        LambdaTestMobileWeb.execute();
+        LamdatestAppium.execute();
+//        LambdaTestMobileWeb.execute();
     }
 
 
