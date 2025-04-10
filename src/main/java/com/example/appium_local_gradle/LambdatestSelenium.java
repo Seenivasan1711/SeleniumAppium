@@ -87,9 +87,9 @@ public class LambdatestSelenium {
     private static DesiredCapabilities getDesiredCapabilities() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "Chrome");
+        capabilities.setCapability("browserName", "Safari");
         capabilities.setCapability("version", "latest");
-        capabilities.setCapability("platform", "Windows 10");
+        capabilities.setCapability("platform", "macOs High Sierra");
         capabilities.setCapability("build", "LambdaTestSampleBuild");
         capabilities.setCapability("name", "LambdaTestSampleTest");
         capabilities.setCapability("build", "Local Selenium dev check TE-20632");
