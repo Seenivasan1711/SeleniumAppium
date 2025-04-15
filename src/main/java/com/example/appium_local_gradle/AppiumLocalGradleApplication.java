@@ -30,10 +30,10 @@ public class AppiumLocalGradleApplication {
 //        appiumMobileWebIOS.main(args);
 //        LamdatestAppium.execute();
 //        LambdaTestMobileWeb.execute();
-//        DragAndDropFireFox.execute();
+        DragAndDropFireFox.execute();
 //        BrowserStackAppium.execute();
 //        LambdaTestOCR.execute();
-        LambdatestSelenium.execute();
+//        LambdatestSelenium.execute();
     }
 
 
